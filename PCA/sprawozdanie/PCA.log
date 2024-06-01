@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.16)  26 MAY 2024 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.16)  29 MAY 2024 10:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/jbozek/techniki_eksploracji_danych/sprawozdanie/sprawozdanie_HCA.tex
-(/home/jbozek/techniki_eksploracji_danych/sprawozdanie/sprawozdanie_HCA.tex
+**/home/jbozek/techniki_eksploracji_danych/PCA/sprawozdanie/PCA.tex
+(/home/jbozek/techniki_eksploracji_danych/PCA/sprawozdanie/PCA.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -294,8 +294,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box54
-) (./sprawozdanie_HCA.aux)
-\openout1 = `sprawozdanie_HCA.aux'.
+) (./PCA.aux)
+\openout1 = `PCA.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
@@ -394,13 +394,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 28.
 LaTeX Info: Redefining \pageref on input line 28.
 LaTeX Info: Redefining \nameref on input line 28.
- (./sprawozdanie_HCA.out) (./sprawozdanie_HCA.out)
+ (./PCA.out) (./PCA.out)
 \@outlinefile=\write3
-\openout3 = `sprawozdanie_HCA.out'.
+\openout3 = `PCA.out'.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sprawozdanie_HCA.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./PCA.toc
 LaTeX Font Info:    Trying to load font information for OML+plm on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
@@ -421,70 +421,29 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <6> on input line 2.
 )
 \tf@toc=\write4
-\openout4 = `sprawozdanie_HCA.toc'.
+\openout4 = `PCA.toc'.
 
  [2]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 
-      [1]
-<../figures//wp_Euk.png, id=74, 392.4261pt x 378.6948pt>
-File: ../figures//wp_Euk.png Graphic file (type png)
-<use ../figures//wp_Euk.png>
-Package pdftex.def Info: ../figures//wp_Euk.png  used on input line 125.
-(pdftex.def)             Requested size: 392.42514pt x 378.69386pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128 
-       [2]
-<../figures//wc_Euk.png, id=84, 392.4261pt x 378.6948pt>
-File: ../figures//wc_Euk.png Graphic file (type png)
-<use ../figures//wc_Euk.png>
-Package pdftex.def Info: ../figures//wc_Euk.png  used on input line 131.
-(pdftex.def)             Requested size: 392.42514pt x 378.69386pt.
- [3 <../figures//wp_Euk.png>]
-<../figures//wp_Manh.png, id=91, 398.9304pt x 378.6948pt>
-File: ../figures//wp_Manh.png Graphic file (type png)
-<use ../figures//wp_Manh.png>
-Package pdftex.def Info: ../figures//wp_Manh.png  used on input line 137.
-(pdftex.def)             Requested size: 398.92943pt x 378.69386pt.
- [4 <../figures//wc_Euk.png>]
-<../figures//wc_Manh.png, id=98, 398.9304pt x 378.6948pt>
-File: ../figures//wc_Manh.png Graphic file (type png)
-<use ../figures//wc_Manh.png>
-Package pdftex.def Info: ../figures//wc_Manh.png  used on input line 143.
-(pdftex.def)             Requested size: 398.92943pt x 378.69386pt.
- [5 <../figures//wp_Manh.png>]
-<../figures//wp_Euk_b_as.png, id=106, 411.2163pt x 378.6948pt>
-File: ../figures//wp_Euk_b_as.png Graphic file (type png)
-<use ../figures//wp_Euk_b_as.png>
-Package pdftex.def Info: ../figures//wp_Euk_b_as.png  used on input line 149.
-(pdftex.def)             Requested size: 411.21529pt x 378.69386pt.
- [6 <../figures//wc_Manh.png>] [7 <../figures//wp_Euk_b_as.png>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 179.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 179.
- [8] [9] (./sprawozdanie_HCA.aux)
-Package rerunfilecheck Info: File `sprawozdanie_HCA.out' has not changed.
-(rerunfilecheck)             Checksum: 11FE06EC7A941C221405CC3F718481FF;1125.
+l.71 \end{document}
+                    [1] (./PCA.aux)
+Package rerunfilecheck Info: File `PCA.out' has not changed.
+(rerunfilecheck)             Checksum: 387B842324333E1987C8183FCD163FE9;876.
  ) 
 Here is how much of TeX's memory you used:
- 11035 strings out of 480139
- 178705 string characters out of 5893693
- 465734 words of memory out of 5000000
- 28810 multiletter control sequences out of 15000+600000
- 477006 words of font info for 47 fonts, out of 8000000 for 9000
+ 10944 strings out of 480139
+ 176656 string characters out of 5893693
+ 458662 words of memory out of 5000000
+ 28745 multiletter control sequences out of 15000+600000
+ 477287 words of font info for 47 fonts, out of 8000000 for 9000
  79 hyphenation exceptions out of 8191
- 60i,14n,63p,321b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb>
-Output written on sprawozdanie_HCA.pdf (11 pages, 200746 bytes).
+ 60i,5n,63p,343b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb>
+Output written on PCA.pdf (3 pages, 40373 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
