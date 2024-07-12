@@ -1,0 +1,7 @@
+PCA
+autoskalowaniu
+ustandaryzowana
+Dummy6
+eig
+eigenvalues
+Dummy7

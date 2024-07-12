@@ -1,0 +1,4 @@
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QOdbywa się to poprzez zastosowanie wzoru: \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q gdzie: \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qzmienna ustandaryzowana \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qzmienna niestandaryzowana \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qśrednia dla obserwacji \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qodchylenie standardowae dla obserwacji\\E$"}
+{"rule":"WIELOKROTNE_WYSTPIENIE_TEGO_SAMEGO_WYRAENIA_PRZYIMKOWEGO","sentence":"^\\QOdbywa się to poprzez zastosowanie wzoru: \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q gdzie: \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qzmienna ustandaryzowana \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qzmienna niestandaryzowana \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qśrednia dla obserwacji \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Qodchylenie standardowae dla obserwacji\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q heat\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}

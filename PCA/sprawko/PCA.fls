@@ -65,6 +65,17 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/polski/polski.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/polski/polski.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/polski/polski.sty
@@ -241,6 +252,17 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -650,7 +672,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plex10.tfm
 OUTPUT PCA.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plti12.tfm
 INPUT ./graphics//eigvals.png
 INPUT ./graphics//eigvals.png
 INPUT ./graphics//eigvals.png
@@ -708,7 +729,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc
-INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plit.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi12.pfb
@@ -718,4 +738,3 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/pl/plti12.pfb

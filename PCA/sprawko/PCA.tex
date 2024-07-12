@@ -5,6 +5,7 @@
 \pagestyle{plain}
 
 \usepackage[margin=2cm]{geometry}
+\usepackage{longtable}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{indentfirst}
@@ -47,7 +48,7 @@
     {\large Bioinformatyka, II rok \par}
     \vspace{2cm}
     
-    {\Large \today \par}
+    {\Large 4 czerwca 2024 \par}
     
     \newpage
     \thispagestyle{empty}
@@ -59,12 +60,13 @@
 
     \subsection{Cel ćwiczenia}
 
-        Ćwiczenia z przedmiotu \textit{Techniki eksploracji danych wielowymiarowych} miały za zadanie przedstawić nam oraz przećwiczyć
-        pod nadzorem różne metody uczenia maszynowego nienadzorowanego. W tym przypadku jest to PCA.
+        Celem ćwieczeń było zapoznanie się z metodą PCA(Principal Component Analysis lub po polsku analiza głównych składowych).
+        Która jest jedną z metod uczenia maszynowego nienadzorowanego. 
 
     \subsection{Krótkie wprowadzenie do metody PCA}
-        Metoda PCA polega na redukcji wymiarowości naszych danych za pomocą przekształceń algebraicznych.
-        Kiedy to się nam uda, będziemy mogli w dużo przystępniejszy sposób zobrazować nasze dane.
+        Metoda PCA polega na redukcji wymiarowości danych za pomocą przekształceń algebraicznych. Wynikiem czego będzie możliwość
+        przystępniejszego zobrazowania i/lub ich analizy.
+        
 
     \subsection{Oprogramowanie}
         Wszystkie elementy sprawozdania zostały stworzone przy pomocy języka programowania \href{https://docs.python.org/3.12/}{Python 3.12.3} z pomocą bibliotek:\\
@@ -112,14 +114,14 @@
             Cov(X) = \CovX
         \end{equation}
 
-        Taką macierz można przedstawić za pomocą \href{file:./graphics/cov.png}{mapy ciepła}. Wtedy jesteśmy, w stanie zauważyć
+        Taką macierz można przedstawić za pomocą \href{file:./graphics/cov.png}{mapy ciepła}. Wtedy można zauważyć,
         jak poszczególne zmienne korelują ze sobą.
 
     \subsection{Wartości i wektory własne głównych składowych}
         
-        Z naszej macierzy kowariancji należy następnie policzyć wartości i wektory własne. W tym celu skorzystaliśmy z
-        metody eig. Zwraca ona wartości posortowane w kolejności malejącej względem wartości własnych, nazywanymi również eigenvalues.
-        Jeśli by tak nie było, musielibyśmy samemu wykonać sortowanie w powyższy sposób. Jest to tak ważne, ponieważ wartości własne wyznaczają
+        Z macierzy kowariancji należy następnie policzyć wartości i wektory własne. W tym celu skorzystałem z
+        metody \href{https://numpy.org/doc/stable/reference/generated/numpy.linalg.eig.html}{eig}. Zwraca ona wartości posortowane w kolejności malejącej względem wartości własnych, nazywanymi również eigenvalues.
+        Jeśli by tak nie było, należałoby samemu wykonać sortowanie w powyższy sposób. Jest to ważne, ponieważ wartości własne wyznaczają
         istotność zmiennej w zbiorze danych.
 
         \begin{table}
@@ -149,8 +151,8 @@
             \caption{Wykres osypiska(wartości własnych) dla głównych składowych}
         \end{figure}
     
-        Czerwona linia odcina nam główne składowe na poziomie 1. Jest to oczekiwana praktyka, jednak na potrzeby zwięzłości sprawozdania
-        będziemy operować jedynie na 3 pierwszych głównych składowych.
+        Czerwona linia odcina główne składowe na poziomie 1. Jest to oczekiwana praktyka, jednak na potrzeby zwięzłości sprawozdania
+        będę operować jedynie na 3 pierwszych głównych składowych.
 
         \begin{figure}[H]
             \centering
@@ -158,7 +160,7 @@
             \caption{Wykres kumulatywnego procentu wyjaśnianej wariancji przez główne składowe}
         \end{figure}
 
-        W tym przypadku, jak widać, dane, które zostawimy, będą opisywały $\sim 65\%$ wariancji całości. Normalnie byłoby to prawdopodobnie $>90\%$.
+        W tym przypadku, dane będą opisywały $\sim 65\%$ wariancji całości. Normalnie byłoby to prawdopodobnie $>90\%$.
         
     \subsection{Macierz ładunków czynnikowych}
         
@@ -170,37 +172,118 @@
             M_{lad\_czyn} = \overrightarrow{v} \sqrt{\lambda}
         \end{equation}
 
-        gdzie\\
+        gdzie
 
         \begin{align*}
             \overrightarrow{v} &= \text{wektory własne}\\
             \lambda &= \text{wartości własne}
         \end{align*}
 
+        \begin{table}[ht!]
+            %\centering
+            \caption{Typ korelacji zmiennych dla głównych składowych}
+            \begin{tabular}[t]{ll}
+                & PC1 \\
+                MolWt & $+$ \\
+                ExactMolWt & $+$ \\
+                FpDensityMorgan1 & $-$ \\
+                FpDensityMorgan2 & $-$ \\
+                FpDensityMorgan3 & $-$ \\
+                BCUT2D\_LOGPHI & $+$ \\
+                Chi0n & $+$ \\
+                Chi0v & $+$ \\
+                Chi1n & $+$ \\
+                Chi1v & $+$ \\
+                Chi2v & $+$ \\
+                Kappa1 & $+$ \\
+                Kappa2 & $+$ \\
+                PEOE\_VSA11 & $-$ \\
+                PEOE\_VSA3 & $-$ \\
+                PEOE\_VSA7 & $+$ \\
+                SMR\_VSA3 & $-$ \\
+                TPSA & $-$ \\
+                EState\_VSA7 & $+$ \\
+                VSA\_EState2 & $-$ \\
+                VSA\_EState3 & $-$ \\
+                NHOHCount & $-$ \\
+                NOCount & $-$ \\
+                NumAromaticHeterocycles & $-$ \\
+                NumHDonors & $-$ \\
+                MolLogP & $+$ \\
+                MolMR & $+$ \\
+                fr\_Ar\_N & $-$ \\
+                fr\_pyridine & $-$ \\
+            \end{tabular}
+            \quad
+            \begin{tabular}[t]{ll}
+                & PC2 \\
+                BCUT2D\_MWHI & $-$ \\
+                BCUT2D\_MWLOW & $+$ \\
+                BCUT2D\_MRHI & $+$ \\
+                BalabanJ & $+$ \\
+                BertzCT & $-$ \\
+                Chi3n & $-$ \\
+                Chi4n & $-$ \\
+                SMR\_VSA7 & $-$ \\
+                SlogP\_VSA3 & $+$ \\
+                SlogP\_VSA6 & $-$ \\
+                VSA\_EState1 & $+$ \\
+                VSA\_EState10 & $-$ \\
+                VSA\_EState6 & $-$ \\
+                FractionCSP3 & $+$ \\
+                NumAromaticCarbocycles & $-$ \\
+                NumAromaticRings & $-$ \\
+                NumHAcceptors & $+$ \\
+                NumRotatableBonds & $+$ \\
+                RingCount & $-$ \\
+                fr\_benzene & $-$ \\
+                fr\_halogen & $-$ \\ 
+            \end{tabular}
+
+        \end{table}
+        %\newpage
+            
+        \begin{tabular}[ht!]{ll}
+            & PC3 \\
+            SPS & $+$ \\
+            AvgIpc & $+$ \\
+            PEOE\_VSA8 & $+$ \\
+            SMR\_VSA4 & $+$ \\
+            SlogP\_VSA4 & $+$ \\
+            NumAliphaticHeterocycles & $+$ \\
+            NumAliphaticRings & $+$ \\
+            NumSaturatedHeterocycles & $+$ \\
+            NumSaturatedRings & $+$ \\
+            fr\_COO & $-$ \\
+            fr\_COO2 & $-$ \\
+        \end{tabular}
+        
+        Jeżeli korelacja jest dodatnia($+$) to wtedy wraz ze wzrostem wartości, wartość skorelowana z nią będzie również rosła.
+        W przypadku korelacji ujemnej($-$) wzrost wartości oznacza spadek wartości skorelowanej.
+            
+
     \subsection{Macierz wartości czynnikowych}
         
-        Macierz wartości czynnikowych, jak podpowiada nam intuicja, powinna być liczona z macierzy ładunków czynnikowych. Jeśli ktoś dałby sobie za
-        to rękę uciąć to, no cóż, nie miałby teraz ręki.
-
-        Wzór jest następujący:
+        Macierz wartości czynnikowych, jak możnaby uważać, powinna być liczona z poprzednio liczonej macierzy ładunków czynnikowych.
+        Jednak jest to jedynie błędnie działająca intuicja, powieważ liczy się ją w sposób następujący:
 
         \begin{equation}
             M_{wart\_czyn} = Z \overrightarrow{v}
         \end{equation}
 
-        gdzie\\
+        gdzie
 
         \begin{align*}
             Z &= \text{macierz wartości autoskalowanych}\\
             \overrightarrow{v} &= \text{wektory własne}
         \end{align*}
 
-        Przedstawia ona wartości naszego zbioru obserwacji dla każdej z wybranych głównych składowych. Te dane posłużą nam później do
+        Przedstawia ona wartości naszego zbioru obserwacji dla każdej z wybranych głównych składowych. Te dane posłużą później do
         przedstawienia na wykresie zawierającym pary głównych składowych.
 
 \section{Wyniki}
 
-    Po wykonaniu kroków opisanych w poprzednim rozdziale jesteśmy w stanie przedstawić wyniki na wykresach.     
+    Po wykonaniu kroków opisanych w poprzednim rozdziale można przedstawić wyniki na wykresach.     
 
     \subsection*{PC1:PC2}
         \begin{figure}[H]
@@ -246,18 +329,23 @@
 
 \section{Obserwacje}
     
-    Jak jesteśmy w stanie zauważyć, powstałe wykresy oddzielają nam 4 grupy pestycydów od siebie
+    Jak można zauważyć, powstałe wykresy oddzielają nam 4 grupy pestycydów od siebie
     w sposób bardzo czytelny. W większości przypadków są one skumulowane oraz oddzielone od siebie. Jest to
     widoczne najlepiej na zestawieniu PC2 oraz PC3. Warto zaznaczyć, że dzieje się tak pomimo najniższej sumy opisywanej wariancji.
 
 \section{Dyskusja i wnioski}
 
+    Spośród 4 grup, które zostały włączone do PCA tzn. (neonikotynoidy, kwasy pirydynokarboksylowe, związki organofosforowe, DDT i analogi)
+    wszystkie są w podobnej odległości od siebie, dlatego ciężko byłoby stwierdzić, które się od siebie najbardziej różnią.
+
+    Zgrupowania są raczej zwarte, oprócz neonikotynoidów, które wizualnie wykazują się najluźniejszą strukturą.
+
     PCA jest bardzo użyteczną techniką używaną w procesie analizy danych. Może ona służyć zarówno w celu przystępniejszego
-    wyświetlenia danych, jak i jako dane wejściowe do algorytmów uczenia maszynowego nadzorowanego. Oprócz tego metoda
+    wyświetlenia danych, jak i jako dane wejściowe do algorytmów uczenia maszynowego. Oprócz tego metoda
     PCA może być wykorzystywana do odszumiania zdjęć, co jest według mnie bardzo interesujące. 
 
-    W naszym przypadku wiemy, do jakich grup należą poszczególne związki, dlatego mogliśmy je zaznaczyć na wykresach.
-    Jednak jeśli nie wiedzielibyśmy tego, możnaby połączyć metodę PCA z metodą grupowania np. KMeans. 
+    W tym przypadku znana jest przynależność poszczególnych związków do grup, dlatego można było je zaznaczyć na wykresach.
+    Jednak jeśli to nie byłoby wiadome, możnaby połączyć metodę PCA z metodą grupowania np. KMeans. 
 
     \begin{figure}
         \centering
@@ -268,7 +356,7 @@
     \end{figure}
 
     Muszę przyznać, że na wykresie z grupowaniem KMeans jest jedna wartość więcej, niż powinna być.
-    Po analizie kodu muszę przyznać, że nie wiem, skąd ten błąd się wziął. Jeśli przymkniemy na niego oko,
+    Po analizie kodu muszę przyznać, że nie wiem, skąd ten błąd się wziął. Jeśli przymknąć na niego oko,
     otrzymamy dokładnie takie samo grupowanie.
 
 \end{document}
