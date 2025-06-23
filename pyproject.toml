@@ -1,5 +1,5 @@
 [project]
-name = "techniki-eksploracji-danych"
+name = "chemical-data-explorer"
 version = "0.1.0"
 description = "Advanced data exploration techniques applied to chemical compounds dataset using multivariate statistical methods"
 readme = "README.md"
